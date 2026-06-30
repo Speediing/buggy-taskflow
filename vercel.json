@@ -1,11 +1,5 @@
 {
   "framework": null,
   "buildCommand": null,
-  "outputDirectory": "public",
-  "git": {
-    "deploymentEnabled": {
-      "main": true,
-      "cursor/*": false
-    }
-  }
+  "outputDirectory": "public"
 }
