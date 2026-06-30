@@ -16,12 +16,10 @@ export function calculateSubtotal(items: CartItem[]): number {
 
 /**
  * Apply a percentage coupon to the cart subtotal.
- *
- * BUG: discount is added instead of subtracted, so totals increase when a coupon is applied.
  */
 export function applyCoupon(subtotal: number, coupon: Coupon): number {
   const discountAmount = subtotal * (coupon.percentOff / 100);
-  return subtotal + discountAmount;
+  return subtotal - discountAmount;
 }
 
 export function calculateTotal(items: CartItem[], coupon?: Coupon): number {
