@@ -1,0 +1,15 @@
+{
+  "name": "buggy-taskflow",
+  "version": "1.0.0",
+  "description": "Demo product with a planted coupon discount bug for support-agent demos",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}
