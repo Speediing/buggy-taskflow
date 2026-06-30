@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buggy TaskFlow</title>
+    <style>
+      :root {
+        --bg: #f7f7f4;
+        --fg: #26251e;
+        --accent: #f54e00;
+        --card: #f2f1ed;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        background: var(--bg);
+        color: var(--fg);
+        line-height: 1.6;
+      }
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 3rem 1.5rem;
+      }
+      h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+      .badge {
+        display: inline-block;
+        background: var(--accent);
+        color: white;
+        padding: 0.25rem 0.75rem;
+        border-radius: 999px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+      .card {
+        background: var(--card);
+        border-radius: 1rem;
+        padding: 1.25rem 1.5rem;
+        margin: 1.5rem 0;
+      }
+      code {
+        background: #ebeae5;
+        padding: 0.15rem 0.4rem;
+        border-radius: 0.25rem;
+        font-size: 0.9em;
+      }
+      a { color: var(--accent); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <span class="badge">Demo product repo</span>
+      <h1>Buggy TaskFlow</h1>
+      <p>
+        This is the intentionally buggy product repo used by the
+        <strong>support-agent-demo</strong>. A Cursor cloud agent clones this
+        repository from GitHub, finds the planted bug, and opens a fix PR.
+      </p>
+
+      <div class="card">
+        <h2>Planted bug</h2>
+        <p>
+          Applying a coupon <strong>increases</strong> the cart total instead of
+          decreasing it. The sign error lives in <code>src/cart.ts</code> inside
+          <code>applyCoupon</code>.
+        </p>
+        <p>
+          Customer complaint: <em>"When I apply my coupon code, my total goes up
+          instead of down."</em>
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Source</h2>
+        <p>
+          <a href="https://github.com/Speediing/buggy-taskflow">GitHub repository</a>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
